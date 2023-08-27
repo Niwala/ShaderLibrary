@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-grow: 1; flex-shrink: 0;">
+        <ui:VisualElement name="Header" style="background-color: rgb(41, 41, 41); height: 50px; border-bottom-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.45); font-size: 16px; border-left-width: 0; border-right-width: 0; border-top-width: 1px; border-left-color: rgba(0, 0, 0, 0.49); border-right-color: rgba(0, 0, 0, 0.49); border-top-color: rgba(0, 0, 0, 0.49); border-top-left-radius: 0; border-top-right-radius: 1px;">
+            <ui:Label text="Cosine" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: middle-left; flex-grow: 1; margin-left: 7px; font-size: 18px;" />
+            <uie:ToolbarBreadcrumbs name="Breadcrumbs" style="height: 18px; font-size: 12px; color: rgb(118, 118, 118); border-top-color: rgba(0, 0, 0, 0.45); border-top-width: 1px; background-color: rgb(51, 51, 51);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Top" style="min-height: 100px;">
+            <ui:IMGUIContainer name="BackPreview" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; opacity: 0.2;" />
+            <ui:VisualElement name="Commands" style="flex-direction: row; padding-left: 0; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; margin-left: 17px;" />
+            <ui:VisualElement name="Description" style="padding-left: 20px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                <ui:Label text="Description" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus mi, faucibus a nulla at, pulvinar euismod elit. Morbi tempus cursus tristique. Nullam id lacus cursus, dictum sem nec, semper nulla." display-tooltip-when-elided="true" name="Text" style="flex-grow: 1; flex-wrap: wrap; white-space: normal; color: rgb(176, 176, 176); font-size: 13px; margin-left: 10px; margin-top: 5px; margin-right: 5px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Separator" style="height: 2px; background-color: rgba(0, 0, 0, 0.47); border-left-color: rgba(255, 255, 255, 0.25); border-right-color: rgba(255, 255, 255, 0.25); border-top-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.25); border-top-width: 0; border-bottom-width: 1px;" />
+        <ui:VisualElement name="Usages" style="padding-left: 20px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+            <ui:Label text="Utilisation" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+            <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus mi, faucibus a nulla at, pulvinar euismod elit. Morbi tempus cursus tristique. Nullam id lacus cursus, dictum sem nec, semper nulla." display-tooltip-when-elided="true" name="Text" style="flex-grow: 1; flex-wrap: wrap; white-space: normal; color: rgb(176, 176, 176); font-size: 13px; margin-left: 10px; margin-top: 5px; margin-right: 5px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Separator" style="height: 2px; background-color: rgba(0, 0, 0, 0.47); border-left-color: rgba(255, 255, 255, 0.25); border-right-color: rgba(255, 255, 255, 0.25); border-top-color: rgba(255, 255, 255, 0.25); border-bottom-color: rgba(255, 255, 255, 0.25); border-top-width: 0; border-bottom-width: 1px;" />
+        <ui:VisualElement name="Preview" style="padding-left: 20px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+            <ui:Label text="Preview" display-tooltip-when-elided="true" name="Label" style="font-size: 14px;" />
+            <uie:Toolbar name="Examples" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(80, 80, 80); padding-top: 0; margin-top: 5px; margin-left: 10px; margin-right: 10px; padding-right: 0; border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;" />
+            <ui:VisualElement name="FunctionContainer" style="padding-left: 3px; padding-right: 3px; padding-top: 1px; background-color: rgb(46, 46, 46); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-left-color: rgba(0, 0, 0, 0.45); border-right-color: rgba(0, 0, 0, 0.45); border-top-color: rgba(0, 0, 0, 0.45); border-bottom-color: rgba(0, 0, 0, 0.45); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; margin-left: 10px; margin-top: 5px; padding-bottom: 1px; margin-right: 10px;">
+                <ui:Label text="cos(time)" display-tooltip-when-elided="true" name="Function" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1; margin-left: 2px; margin-top: 2px; margin-right: 2px; font-size: 14px; white-space: normal; margin-bottom: 2px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="PreviewContainer" style="width: 256px; height: 256px; padding-left: 2px; padding-right: 2px; padding-top: 2px; padding-bottom: 2px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-left-color: rgba(0, 0, 0, 0.45); border-right-color: rgba(0, 0, 0, 0.45); border-top-color: rgba(0, 0, 0, 0.45); border-bottom-color: rgba(0, 0, 0, 0.45); background-color: rgb(46, 46, 46); margin-left: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <ui:IMGUIContainer name="Preview" style="flex-grow: 1; flex-shrink: 0;" />
+                <ui:Label text="- 0" display-tooltip-when-elided="true" name="Min" style="position: absolute; right: -43px; bottom: -8px; color: rgb(142, 142, 142); width: 40px;" />
+                <ui:Label text="- 0.5" display-tooltip-when-elided="true" name="Center" style="position: absolute; right: -43px; bottom: 0; color: rgb(142, 142, 142); top: 0; width: 40px; -unity-text-align: middle-left;" />
+                <ui:Label text="- 1.0" display-tooltip-when-elided="true" name="Max" style="position: absolute; right: -43px; bottom: auto; color: rgb(142, 142, 142); top: -7px; width: 40px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="MaterialProperties" style="margin-left: 10px; margin-right: 20px;">
+                <ui:Slider picking-mode="Ignore" label="Slider" value="0.5" high-value="1" name="Slider_01" show-input-field="true" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Décris des coordonnées de notre objet. &lt;a href=&quot;https://docs.unity3d.com&quot;&gt;Documentation link&lt;/a&gt;&#10;C&apos;est coordonnées sont généralement utilisée pour afficher une texture." display-tooltip-when-elided="true" name="Description" style="margin-left: 10px; margin-right: 18px; margin-top: 10px; margin-bottom: 5px; display: flex; flex-wrap: wrap; white-space: normal; font-size: 13px; color: rgb(176, 176, 176); border-left-color: rgba(0, 0, 0, 0.49); border-right-color: rgba(0, 0, 0, 0.49); border-top-color: rgba(0, 0, 0, 0.49); border-bottom-color: rgba(0, 0, 0, 0.49); border-top-width: 1px; padding-top: 10px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

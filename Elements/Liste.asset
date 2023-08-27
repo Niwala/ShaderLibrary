@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02dd5e948cc3b6c4ebea22c3f5c825c0, type: 3}
+  m_Name: Liste
+  m_EditorClassIdentifier: 
+  buttons:
+  - name: Wiki
+    url: https://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Cos
+    obj: {fileID: 0}
+  - name: Graph
+    url: https://www.desmos.com/calculator/b05ze1junl
+    obj: {fileID: 0}
+  - name: Cercle
+    url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Circle_cos_sin.gif
+    obj: {fileID: 0}
+  functions:
+  - function: f_cos(m_time);
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 0
+    properties: []
+  - function: f_cos(m_time) * 0.5 + 0.5;
+    description: 
+    showMinMax: 0
+    min: -1
+    max: 1
+    properties: []
+  - function: f_cos(m_time * v_Speed) * 0.5 + 0.5;
+    description: 
+    showMinMax: 0
+    min: -1
+    max: 1
+    properties:
+    - _Speed
+  - function: f_cos(v_Time + m_uv.x) > m_uv.y;
+    description: 
+    showMinMax: 1
+    min: -1
+    max: 1
+    properties: []
+  - function: f_cos(v_Time * v_Speed + m_uv.x * v_Frequency) * v_Amplitude > m_uv.y;
+    description: 
+    showMinMax: 1
+    min: -1
+    max: 1
+    properties:
+    - _Speed
+    - _Frequency
+    - _Amplitude
+  nodeName: Cos
+  tags: trigonometry
+  breadcrumbs: Trigonometry
+  material: {fileID: 2100000, guid: 78ac100c3088b8e489d022f605142d12, type: 2}
+  description: "Retourne le f_cosinus de la valeur donn\xE9e."
+  usages: "La fonction cosinus est souvent utilis\xE9e pour cr\xE9er des effets p\xE9riodique
+    doux.\r\n\r\nUne input allant de v_0 \xE0 v_2PI permet de faire un cycle complet
+    allant de v_-1 \xE0 v_1\r\n\r\nLe sinus et cosinus sont aussi souvent utilis\xE9s
+    de pair pour transformer un angle en vecteur. Pour mieux visualiser cela, cliquez
+    sur le bouton m_cercle ci-dessus."

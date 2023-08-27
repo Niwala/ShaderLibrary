@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02dd5e948cc3b6c4ebea22c3f5c825c0, type: 3}
+  m_Name: UvCoords
+  m_EditorClassIdentifier: 
+  nodeName: Uv Coords
+  tags: coords
+  breadcrumbs: Coords
+  buttons:
+  - name: Wiki
+    url: https://en.wikipedia.org/wiki/UV_mapping
+    obj: {fileID: 0}
+  - name: Amplify
+    url: https://wiki.amplify.pt/index.php?title=Unity_Products:Amplify_Shader_Editor/Vertex_TexCoord
+    obj: {fileID: 0}
+  functions:
+  - function: m_uv
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 0
+    properties: []
+  - function: m_uv.x
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties: []
+  - function: m_uv.y
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties: []
+  - function: 'v_Threshold > m_uv.x '
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Threshold
+  - function: ' v_Threshold > m_uv.y'
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Threshold
+  - function: m_uv * v_Tilling
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Tilling
+    - _UseTexture
+    - _Texture
+  - function: m_uv + v_Panning.xy
+    description: 
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Panning
+    - _UseTexture
+    - _Texture
+  - function: (m_uv.x + v_Time * v_Speed, m_uv.y)
+    description: "Il est int\xE9ressant de noter les \"sauts\" dans le panning lors
+      de changements sur le param\xE8tre v_Speed. "
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Speed
+    - _UseTexture
+    - _Texture
+  description: "D\xE9cris des coordonn\xE9es de notre objet.\nC'est coordonn\xE9es
+    sont g\xE9n\xE9ralement utilis\xE9e pour afficher une texture."
+  usages: "Les coordonn\xE9es sont \xE0 la bases de la grande majorit\xE9 de shaders."
+  material: {fileID: 2100000, guid: 0184827d26e2a2a4c9049cfd3a9405aa, type: 2}
+  preview: {fileID: 0}
