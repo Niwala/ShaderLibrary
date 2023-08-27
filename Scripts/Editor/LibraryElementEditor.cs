@@ -174,6 +174,8 @@ public class LibraryElementEditor : Editor
                     {
                         if (matProps[j].name == f.properties[i])
                         {
+                            bool hdr = (matProps[j].flags & MaterialProperty.PropFlags.HDR) == MaterialProperty.PropFlags.HDR;
+
                             switch (matProps[j].type)
                             {
                                 case MaterialProperty.PropType.Color:
@@ -181,12 +183,13 @@ public class LibraryElementEditor : Editor
                                         ColorField colorField = new ColorField(matProps[j].name);
                                         colorField.value = matProps[j].vectorValue;
                                         colorField.RegisterCallback((ChangeEvent<Color> e) => matProps[j].colorValue = e.newValue);
+                                        colorField.hdr = hdr;
                                         field = colorField;
                                     }
                                     break;
                                 case MaterialProperty.PropType.Vector:
                                     {
-                                        if ((matProps[j].flags & MaterialProperty.PropFlags.HDR) == MaterialProperty.PropFlags.HDR)
+                                        if (hdr)
                                         {
                                             Vector2Field vectorField = new Vector2Field(matProps[j].name);
                                             vectorField.value = matProps[j].vectorValue;
@@ -212,7 +215,7 @@ public class LibraryElementEditor : Editor
                                     break;
                                 case MaterialProperty.PropType.Float:
                                     {
-                                        if ((matProps[j].flags & MaterialProperty.PropFlags.HDR) == MaterialProperty.PropFlags.HDR)
+                                        if (hdr)
                                         {
                                             Toggle toggle = new Toggle(matProps[j].name);
                                             toggle.value = matProps[j].floatValue > 0.5f;
