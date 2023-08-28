@@ -1,6 +1,8 @@
-# ShaderLibrary
-Pour ouvrir la librarie, utilisez le menu Challenges > Library
+### WIP: Only the foundations are in place, the project is not yet ready for use.
 
+# ShaderLibrary
+
+Pour ouvrir la librarie, utilisez le menu Challenges > Library
 ## Ajouter un élément
 Pour ajoute un nouvel élément je conseil de simplement en dupliquer un existant. Il sera automatiquement ajouté à la librarie.
 
