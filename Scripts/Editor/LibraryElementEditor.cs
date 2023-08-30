@@ -69,7 +69,7 @@ public class LibraryElementEditor : Editor
                 breadcrumbs.PushItem(steps[j], () => Library.Open(steps[j]));
             }
         }
-        breadcrumbs.PushItem("Cosine", null);
+        breadcrumbs.PushItem(element.nodeName, null);
 
         //Backpreview
         backPreview = root.Q<IMGUIContainer>("BackPreview");
@@ -181,8 +181,9 @@ public class LibraryElementEditor : Editor
                                 case MaterialProperty.PropType.Color:
                                     {
                                         ColorField colorField = new ColorField(matProps[j].name);
-                                        colorField.value = matProps[j].vectorValue;
+                                        colorField.value = matProps[j].colorValue;
                                         colorField.RegisterCallback((ChangeEvent<Color> e) => matProps[j].colorValue = e.newValue);
+                                        colorField.showAlpha = hdr;
                                         colorField.hdr = hdr;
                                         field = colorField;
                                     }

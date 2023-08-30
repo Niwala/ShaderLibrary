@@ -62,7 +62,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _CustomTime: 743.6035
+    - _CustomTime: 722.429
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0

@@ -243,7 +243,7 @@ public class Library_Editor : Editor
             //Search filter
             if (!string.IsNullOrEmpty(library.search))
             {
-                Match match = Regex.Match(elements[i].tags, library.search, RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
+                Match match = Regex.Match(elements[i].tags + " " + elements[i].breadcrumbs, library.search, RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
                 if (!match.Success)
                 {
                     match = Regex.Match(elements[i].nodeName, library.search, RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);

@@ -57,13 +57,11 @@ MonoBehaviour:
     - _Speed
     - _Frequency
     - _Amplitude
-  nodeName: Cos
-  tags: trigonometry
-  breadcrumbs: Trigonometry
-  material: {fileID: 2100000, guid: 78ac100c3088b8e489d022f605142d12, type: 2}
-  description: "Retourne le f_cosinus de la valeur donn\xE9e."
-  usages: "La fonction cosinus est souvent utilis\xE9e pour cr\xE9er des effets p\xE9riodique
-    doux.\r\n\r\nUne input allant de v_0 \xE0 v_2PI permet de faire un cycle complet
-    allant de v_-1 \xE0 v_1\r\n\r\nLe sinus et cosinus sont aussi souvent utilis\xE9s
-    de pair pour transformer un angle en vecteur. Pour mieux visualiser cela, cliquez
-    sur le bouton m_cercle ci-dessus."
+  nodeName: Liste
+  tags: 
+  breadcrumbs: 
+  material: {fileID: 0}
+  description: "Pour ajouter un nouvel \xE9lement, "
+  usages: "Fonctions \xE0 int\xE9grer :\n- Floor\n- Fract\n- Noise\n- Power\n- Sine\n-
+    Arctan2\n- Smoothstep\n- Step\n- Length\n- Distance\n- Abs\n- Clamp\n- Dot\n-
+    Ceil\n- Round\n- Lerp\n- Min\n- Max\n- Sign\n- Step"
