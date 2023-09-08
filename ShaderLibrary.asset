@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16dcc16ebe0f2c741b007c466ad36804, type: 3}
+  m_Name: ShaderLibrary
+  m_EditorClassIdentifier: 
+  pages:
+  - content:
+    - type: 3
+      text: "Ce challenge contient une liste de fonctions typiques utilis\xE9es dans
+        les shaders.\nOn y retrouve des explications et exemples interactifs.\n\nPour
+        ouvrir la Library, utilisez le raccourcis Alt + L ou s\xE9lectionnez le menu
+        Challenges > Library."
+      padding: 0
+      obj: {fileID: 0}
+    - type: 3
+      text: 
+      padding: 0
+      obj: {fileID: 0}
+  description: Contains a list of typical functions used in shaders.
+  preview: {fileID: 2800000, guid: b091031aa52708045a1aad08382afeb7, type: 3}
+  majorVersion: 1
+  minorVersion: 0
+  priority: -100
+  hidden: 0
+  teacher: All
+  tags: Shader, Library, Fonctions, Functions
+  scene: {fileID: 0}
+  onOpen: LibraryEditor.Open

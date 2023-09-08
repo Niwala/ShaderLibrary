@@ -14,6 +14,7 @@ using Cursor = UnityEngine.UIElements.Cursor;
 public class LibraryElementEditor : Editor
 {
     private const string documentRelativePath = "UI\\LibraryElementDocument.uxml";
+
     private static VisualTreeAsset document;
     private IMGUIContainer preview;
     private IMGUIContainer backPreview;
@@ -59,14 +60,14 @@ public class LibraryElementEditor : Editor
         title.RegisterCallback((MouseDownEvent e) => { if (e.shiftKey) OpenEditMode(); });
         ToolbarBreadcrumbs breadcrumbs = header.Q<ToolbarBreadcrumbs>("Breadcrumbs");
 
-        breadcrumbs.PushItem("Library", () => Library.Open(""));
+        breadcrumbs.PushItem("Library", () => LibraryEditor.OpenWithSearch(""));
         if (!string.IsNullOrEmpty(element.breadcrumbs))
         {
             string[] steps = element.breadcrumbs.Split(',');
             for (int i = 0; i < steps.Length; i++)
             {
                 int j = i;
-                breadcrumbs.PushItem(steps[j], () => Library.Open(steps[j]));
+                breadcrumbs.PushItem(steps[j], () => LibraryEditor.OpenWithSearch(steps[j]));
             }
         }
         breadcrumbs.PushItem(element.nodeName, null);

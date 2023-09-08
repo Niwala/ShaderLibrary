@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - name: The Book of Shader
-    url: https://thebookofshaders.com/glossary/?search=distance
+    url: https://thebookofshaders.com/glossary/?search=mix
     obj: {fileID: 0}
   functions:
-  - function: f_distance(m_uv, m_float2(n_0.5, n_0.5))
+  - function: f_lerp(v_ColorA, v_ColorB, v_T)
     description: 
     showMinMax: 0
     min: 0
     max: 0
-    properties: []
+    properties:
+    - _ColorA
+    - _ColorB
+    - _T
   - function: f_distance(m_uv, v_Position)
     description: 
     showMinMax: 1
@@ -56,9 +59,9 @@ MonoBehaviour:
     - _Position
     - _Offset
     - _Thickness
-  nodeName: Distance
+  nodeName: Lerp
   tags: 
-  breadcrumbs: Math
-  material: {fileID: 2100000, guid: 35d24e0c60feb9a4cbd2ed63237fb3fa, type: 2}
+  breadcrumbs: Utility
+  material: {fileID: 2100000, guid: 8fff50bbbfb32c049891e4885d5147ee, type: 2}
   description: "Retourne la distance entre 2 coordon\xE9es."
   usages: 

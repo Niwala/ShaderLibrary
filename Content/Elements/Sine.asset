@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dd5e948cc3b6c4ebea22c3f5c825c0, type: 3}
-  m_Name: Power
+  m_Name: Sine
   m_EditorClassIdentifier: 
-  nodeName: Power
-  tags: 
+  buttons: []
+  functions: []
+  nodeName: Sin
+  tags: trigonometry
+  breadcrumbs: Trigonometry
+  material: {fileID: 2100000, guid: 43199faf8fca4564b874e5815fc4f5ba, type: 2}
   description: 
-  material: {fileID: 2100000, guid: 1213f1823c011514a93029d86a4cc5a8, type: 2}
-  wikiUrl: 
-  previewUrl: 
-  preview: {fileID: 0}
+  usages: 

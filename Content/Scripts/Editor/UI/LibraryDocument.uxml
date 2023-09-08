@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Root" style="flex-grow: 1; flex-shrink: 0;">
+        <ui:VisualElement name="Header" style="background-color: rgb(41, 41, 41); height: 50px; border-bottom-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.45); font-size: 16px; border-left-width: 0; border-right-width: 0; border-top-width: 1px; border-left-color: rgba(0, 0, 0, 0.49); border-right-color: rgba(0, 0, 0, 0.49); border-top-color: rgba(0, 0, 0, 0.49); border-top-left-radius: 0; border-top-right-radius: 1px;">
+            <ui:Label text="Library" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: middle-left; flex-grow: 1; margin-left: 7px; font-size: 18px;" />
+            <uie:Toolbar name="Toolbar" style="border-top-color: rgba(0, 0, 0, 0.45); border-top-width: 1px; border-bottom-width: 0; background-color: rgb(51, 51, 51);">
+                <uie:ToolbarSearchField focusable="true" name="SearchField" style="flex-grow: 1;" />
+                <uie:ToolbarMenu tabindex="-1" display-tooltip-when-elided="true" name="Menu" style="border-left-width: 1px; margin-right: 0; margin-left: 3px; padding-right: 4px; background-color: rgba(60, 60, 60, 0);" />
+            </uie:Toolbar>
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

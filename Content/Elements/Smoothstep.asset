@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dd5e948cc3b6c4ebea22c3f5c825c0, type: 3}
-  m_Name: Sine
+  m_Name: Smoothstep
   m_EditorClassIdentifier: 
-  nodeName: Sin
-  tags: trigonometry
+  buttons: []
+  functions: []
+  nodeName: Smoothstep
+  tags: Gradients
+  breadcrumbs: Utility
+  material: {fileID: 2100000, guid: e5d181af043d5ae4dad46520aaaaf080, type: 2}
   description: 
-  material: {fileID: 2100000, guid: 43199faf8fca4564b874e5815fc4f5ba, type: 2}
-  wikiUrl: 
-  previewUrl: 
-  preview: {fileID: 0}
+  usages: 

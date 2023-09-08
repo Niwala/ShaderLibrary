@@ -33,6 +33,9 @@ Material:
     - _Frequency: 3.81
     - _Opacity: 1
     - _Speed: 15.28
+    - _T: 0.617
     - _Threshold: 0.5
-    m_Colors: []
+    m_Colors:
+    - _ColorA: {r: 0.764151, g: 0.38568, b: 0.38568, a: 0}
+    - _ColorB: {r: 0.28235295, g: 0.32957742, b: 0.6039216, a: 0}
   m_BuildTextureStacks: []
