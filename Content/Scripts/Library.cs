@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Library : ScriptableObject
+namespace Challenges
 {
-    [System.NonSerialized]
-    public string search;
+    public class Library : ScriptableObject
+    {
+        [System.NonSerialized]
+        public string search;
+    }
 }
