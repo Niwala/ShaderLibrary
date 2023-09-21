@@ -12,11 +12,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dd5e948cc3b6c4ebea22c3f5c825c0, type: 3}
   m_Name: Floor
   m_EditorClassIdentifier: 
-  buttons: []
-  functions: []
+  buttons:
+  - name: The Book of Shaders
+    url: https://thebookofshaders.com/glossary/?search=floor
+    obj: {fileID: 0}
+  - name: Desmos
+    url: https://www.desmos.com/calculator/ietqdtg5wo
+    obj: {fileID: 0}
+  functions:
+  - function: f_floor(m_uv.y * v_Frequency) / v_Frequency
+    description: "Nous allons ici faire un f_Floor sur les m_Uvs.x.\nCependant, un
+      floor entre 0 et 1 ne serait pas tr\xE8s int\xE9ressant, c'est pourquoi nous
+      ajoutons le param\xE8tre v_Frequency.\nEnsuite, nous divisons aussi par le
+      param\xE8tre v_Frequency car afficher les nombres allant au-dela de 1 ne serait
+      pas tr\xE8s int\xE9ressant."
+    showMinMax: 1
+    min: 0
+    max: 1
+    properties:
+    - _Frequency
+  - function: f_fract(f_floor(m_Time) * n_0.2)
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 1
+    properties: []
+  - function: 
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 1
+    properties:
+    - _Speed
+  - function: 
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 1
+    properties: []
+  - function: 
+    description: 
+    showMinMax: 0
+    min: 0
+    max: 1
+    properties:
+    - _Frequency
   nodeName: Floor
   tags: round
   breadcrumbs: Math
-  material: {fileID: 2100000, guid: 2e4742e8d4a4b4349b500c2b563083c3, type: 2}
-  description: 
-  usages: 
+  material: {fileID: 2100000, guid: 042d9c05adab24748917965610132df4, type: 2}
+  description: "Retourne le plus grand nombre entier plus petit ou \xE9gal \xE0 la
+    valeur."
+  usages: "Tr\xE8s semblable au f_Round ou f_Ceil, il va nous permettre de cr\xE9er
+    des \"paliers\".\r\n\r\nOn va l'utiliser dans les cas o\xF9 l'on veut arrondir
+    un nombre flotant \xE0 l'unit\xE9 inf\xE9rieur.\r\n\r\nOn peut facilement le
+    retrouver pour r\xE9aliser une s\xE9quence. Avec un peu de logique en plus, la
+    fonction f_Floor peut \xEAtre utilis\xE9 au coeur d'un algorithme qui fait cycler
+    une variable compatant de 0 \xE0 3 par exemple.\r\n\r\nOn peut aussi le retrouver
+    lorsqu'il s'agit de faire des variations de luminosit\xE9, de couleur ou un autre
+    param\xE8tre sur des bandes."
